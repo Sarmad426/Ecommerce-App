@@ -1,13 +1,14 @@
-.App,
-#root,
-body {
+.body {
   text-align: center;
+  background: #232323;
+  color: whitesmoke;
 }
 .cards {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 .card-data {
   width: 20rem;
   margin: 20px;
@@ -16,4 +17,135 @@ body {
   box-shadow: 0 10px 10px lightgray;
   display: inline-block;
   text-align: center;
+}
+
+nav {
+  margin-bottom: 20px;
+  background-color: bisque;
+  padding: 15px !important;
+}
+.logo h1 {
+  color: black;
+  font-family: "Cooper";
+  cursor: pointer;
+}
+nav .nav-link {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+}
+.shopping-cart {
+  width: 6rem;
+  color: black;
+}
+.cart-link {
+  color: black;
+  font-size: 30px;
+}
+.counter-badge {
+  padding: 4px 6px !important;
+  margin-right: 12px;
+  margin-bottom: 20px;
+}
+.navbar .nav-link.active {
+  color: red !important;
+}
+.navbar .nav-link:hover {
+  color: black;
+}
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+}
+.product-card {
+  width: 20rem;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+}
+.favorite {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 25px;
+  background-image: linear-gradient(0.5, 0.5, 0.5, lightgrey);
+  cursor: pointer;
+}
+.single-card {
+  min-width: 30rem;
+  height: 30rem;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  text-align: center;
+  position: relative;
+}
+.single-card .btn {
+  width: 6rem !important;
+  padding: 5px;
+  font-size: 18px;
+}
+.single-card img {
+  width: 100%;
+}
+.btn-sm {
+  font-weight: 500 !important;
+}
+img {
+  width: 100%;
+  height: 65%;
+}
+.link {
+  font-size: 18px;
+  color: rgb(207, 185, 185);
+}
+.badge {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 18px !important;
+  background-color: saddlebrown !important;
+}
+.badge-price {
+  background-color: rgb(247, 237, 237);
+}
+
+form {
+  text-align: center;
+  margin: auto;
+  width: 26rem;
+  padding: 10px;
+}
+.user-name {
+  text-decoration: underline;
+}
+form input {
+  width: 25rem !important;
+  margin: 10px;
+}
+label {
+  font-size: 20px;
+  font-weight: 500;
+}
+textarea {
+  margin: 20px 10px 30px 10px;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+.cart-item {
+  width: 20rem !important;
+  position: relative;
+  border: 1px solid lightgrey;
+  padding: auto !important;
+  margin: 20px;
+  border-radius: 5px;
+  height: 30rem;
+}
+.red {
+  color: red;
 }
