@@ -7,13 +7,19 @@ class Posts extends React.Component {
   );
   render() {
     return (
-      <div className="cards">
-        {this.state.posts.map((post) => (
-          <div className="card-data">
-            <h4>{post.title}</h4>
-            <p>{post.body}</p>
-          </div>
-        ))}
+      <div className="text-center">
+        <div className="posts">
+          {this.state.posts.map((post) => (
+            <div className="card-data" key={post.id}>
+              <h4>{post.title}</h4>
+              <p>{post.body}</p>
+            </div>
+          ))}
+        </div>
+        <textarea name="Feedback" id="feedback" cols="40" rows="10">
+          Add your own post
+        </textarea>
+        <button className="btn btn-primary m-3">Submit</button>
       </div>
     );
   }
